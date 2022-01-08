@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7">
-      <module name="iGap_new_generation.app" target="11" />
-      <module name="iGap_new_generation.common" target="11" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="iGap_new_generation.core" target="11" />
       <module name="iGap_new_generation.feature_login" target="11" />
-      <module name="iGap_new_generation.login.login-domain" target="11" />
-      <module name="iGap_new_generation.login.login-interactor" target="11" />
-      <module name="iGap_new_generation.network_module" target="11" />
+      <module name="iGap_new_generation.login.login-datasource" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

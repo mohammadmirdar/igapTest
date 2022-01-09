@@ -46,14 +46,15 @@ class MainActivity : AppCompatActivity() {
     lateinit var inputPhoneNumberEditTex: EditText
     lateinit var loginButton: Button
     lateinit var loginWighQrCodeButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         LayoutCreator.context = this
         rootView = LinearLayout(this)
-        rootView.tag = "rootView"
+        rootView.id = R.id.rootView
         rootView.orientation = LinearLayout.VERTICAL
         selectCountryRootview = LinearLayout(this)
-        selectCountryRootview.tag = "selectCountryRootview"
+        selectCountryRootview.id = R.id.selectCountryRootview
         rootView.addView(
             selectCountryRootview,
             LayoutCreator.createLinear(
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         selectCountryRootview.orientation = LinearLayout.HORIZONTAL
         prefixNumberRootView = FrameLayout(this)
-        prefixNumberRootView.tag = "prefixNumberRootView"
+        prefixNumberRootView.id = R.id.prefixNumberRootView
         selectCountryRootview.addView(
             prefixNumberRootView,
             LayoutCreator.createLinear(82, 52, Gravity.CENTER)
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
 
         prefixNumberTextView = TextView(this)
-        prefixNumberTextView.tag = "prefixNumberTextView"
+        prefixNumberTextView.id = R.id.prefixNumberTextView
         prefixNumberRootView.addView(
             prefixNumberTextView,
             LayoutCreator.createFrame(
@@ -89,13 +90,13 @@ class MainActivity : AppCompatActivity() {
 
 
         selectCountryCodeRootView = FrameLayout(this)
-        selectCountryCodeRootView.tag = "selectCountryCodeRootView"
+        selectCountryCodeRootView.id = R.id.selectCountryCodeRootView
         selectCountryRootview.addView(
             selectCountryCodeRootView,
             LayoutCreator.createLinear(254, 52, Gravity.CENTER, 7, 0, 0, 0)
         )
         selectCountryCodeTextView = TextView(this)
-        selectCountryCodeTextView.tag = "selectCountryCodeTextView"
+        selectCountryCodeTextView.id = R.id.selectCountryCodeTextView
         selectCountryRootview.gravity = Gravity.CENTER
 
         selectCountryCodeRootView.addView(
@@ -111,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         selectCountryCodeTextView.text = "IR"
 
         inputPhoneNumberRootView = FrameLayout(this)
-        inputPhoneNumberRootView.tag = "inputPhoneNumberRootView"
+        inputPhoneNumberRootView.id = R.id.inputPhoneNumberRootView
         inputPhoneNumberRootView.background = resources.getDrawable(R.drawable.round_border)
         rootView.addView(
             inputPhoneNumberRootView,
@@ -119,7 +120,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         inputPhoneNumberEditTex = EditText(this)
-        inputPhoneNumberEditTex.tag = "inputPhoneNumberEditTex"
+        inputPhoneNumberEditTex.id = R.id.inputPhoneNumberEditTex
         inputPhoneNumberEditTex.hint = "your phone no."
         inputPhoneNumberEditTex.background = null
         inputPhoneNumberEditTex.gravity = Gravity.CENTER
@@ -140,7 +141,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         loginButton = Button(this)
-        loginButton.tag = "loginButton"
+        loginButton.id = R.id.loginButton
         loginButton.background = resources.getDrawable(R.drawable.round_button)
         loginButton.text = "Login"
         loginButton.isEnabled = false
@@ -151,7 +152,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         loginWighQrCodeButton = Button(this)
-        loginWighQrCodeButton.tag = "loginWighQrCodeButton"
+        loginWighQrCodeButton.id = R.id.loginWighQrCodeButton
         loginWighQrCodeButton.background = resources.getDrawable(R.drawable.round_button)
         loginWighQrCodeButton.text = "login with QR-code"
         loginWighQrCodeButton.setTextColor(Color.WHITE)

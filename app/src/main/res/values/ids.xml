@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="prefixNumberRootView" type="id"/>
+    <item name="rootView" type="id"/>
+    <item name="prefixNumberTextView" type="id"/>
+    <item name="selectCountryRootview" type="id"/>
+    <item name="selectCountryCodeRootView" type="id"/>
+    <item name="selectCountryCodeTextView" type="id"/>
+    <item name="inputPhoneNumberRootView" type="id"/>
+    <item name="inputPhoneNumberEditTex" type="id"/>
+    <item name="loginButton" type="id"/>
+    <item name="loginWighQrCodeButton" type="id"/>
+
+</resources>

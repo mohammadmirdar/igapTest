@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var structCountryArrayList: ArrayList<StructCountry>
     lateinit var loginViewModel: LoginViewModel
     lateinit var rootView: LinearLayout
+    lateinit var mainRootView: FrameLayout
     lateinit var selectCountryRootview: LinearLayout
     lateinit var prefixNumberRootView: FrameLayout
     lateinit var prefixNumberTextView: TextView
@@ -51,6 +52,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         LayoutCreator.context = this
         rootView = LinearLayout(this)
+        mainRootView = FrameLayout(this)
+        mainRootView.addView(
+            rootView,
+            LayoutCreator.createFrame(
+                LayoutCreator.WRAP_CONTENT,
+                LayoutCreator.WRAP_CONTENT,
+                Gravity.CENTER
+            )
+        )
         rootView.id = R.id.rootView
         rootView.orientation = LinearLayout.VERTICAL
         selectCountryRootview = LinearLayout(this)
@@ -60,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             LayoutCreator.createLinear(
                 LayoutCreator.WRAP_CONTENT,
                 LayoutCreator.WRAP_CONTENT,
-                Gravity.CENTER, 0, 305, 0, 0
+                Gravity.CENTER, 0, 0, 0, 0
             )
         )
 
@@ -161,7 +171,7 @@ class MainActivity : AppCompatActivity() {
             LayoutCreator.createLinear(343, 52, Gravity.CENTER, 0, 11, 0, 0)
         )
 
-        setContentView(rootView)
+        setContentView(mainRootView)
 
 
         selectCountryCodeRootView.setOnClickListener {

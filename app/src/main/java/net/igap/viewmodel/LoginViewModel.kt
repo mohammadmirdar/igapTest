@@ -1,4 +1,4 @@
-package net.igap
+package net.igap.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

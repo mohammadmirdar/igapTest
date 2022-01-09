@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/drawable/round_border.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/drawable/round_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/drawable/round_button_green.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/layout/activity_main.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/layout/rg_adapter_dialog.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Mohammadreza/StudioProjects/igapTest/app/src/main/res/layout/rg_dialog.xml" value="0.3342391304347826" />
       </map>
     </option>
   </component>
